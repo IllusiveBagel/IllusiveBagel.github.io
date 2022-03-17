@@ -59,7 +59,7 @@ export default class App extends React.Component {
                 <section id="Experience" className="section flex" style={{ top: "302%" }}>
                     <h1>Experience</h1>
                 </section>
-                <section id="Contact" className="section flex" style={{ top: "504%" }}>
+                <section id="Contact" className="section flex" style={{ top: "403%" }}>
                     <h1>Contact</h1>
                 </section>
             </>
