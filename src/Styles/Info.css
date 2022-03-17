@@ -1,0 +1,75 @@
+/*======================================================
+                          Info Page                      
+  ======================================================*/
+
+.Info-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 70%;
+    margin-top: 60px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 5px;
+}
+
+.Info-Image-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.Info-Block {
+    width: 50%;
+}
+
+.Info-Title {
+    font-size: 2.5em;
+    text-decoration: underline 5px #e31b6d;
+    color: rgb(13, 26, 38);
+}
+
+.Info-Text {
+    width: 85%;
+    text-align: justify;
+    color: rgb(13, 26, 38);
+}
+
+/*======================================================
+                     Mobile Info Page                      
+  ======================================================*/
+  @media(max-width: 640px) {
+      .Info-Container {
+          flex-direction: column;
+          width: 90%;
+          height: 88%;
+      }
+
+      .Info-Image-Container {
+          width: 80%;
+          height: 45%;
+      }
+
+      .Info-Image {
+          width: 100%;
+      }
+
+      .Info-Block {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          height: 55%;
+      }
+
+      .Info-Title {
+          font-size: 1.8em;
+          text-align: center;
+      }
+
+      .Info-Text {
+          font-size: 0.9em;
+      }
+  }
