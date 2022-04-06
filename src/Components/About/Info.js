@@ -20,7 +20,7 @@ export default class Info extends React.Component {
                         experience as a Full Stack Developer and before that I had a years experince
                         as a Tester. Over the last 6 years I have gained lots of great experience and
                         knowledge that I apply to make modern and effecient applications.
-                        <br /> <br />
+                        <br /><br />
                         I am always looking for my next challenge and I am very keen to gain new knowledge
                         along the way to improve my abilities as much as I can. My next career steps is to
                         specialise in ReactJS and focus on all the front-end development skills I have gained.

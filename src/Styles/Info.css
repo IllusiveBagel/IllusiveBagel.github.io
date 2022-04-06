@@ -40,36 +40,36 @@
 /*======================================================
                      Mobile Info Page                      
   ======================================================*/
-  @media(max-width: 640px) {
-      .Info-Container {
-          flex-direction: column;
-          width: 90%;
-          height: 88%;
-      }
+@media(max-width: 640px) {
+    .Info-Container {
+        flex-direction: column;
+        width: 90%;
+        height: 88%;
+    }
 
-      .Info-Image-Container {
-          width: 80%;
-          height: 45%;
-      }
+    .Info-Image-Container {
+        width: 80%;
+        height: 45%;
+    }
 
-      .Info-Image {
-          width: 100%;
-      }
+    .Info-Image {
+        width: 100%;
+    }
 
-      .Info-Block {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          width: 100%;
-          height: 55%;
-      }
+    .Info-Block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 55%;
+    }
 
-      .Info-Title {
-          font-size: 1.8em;
-          text-align: center;
-      }
+    .Info-Title {
+        font-size: 1.8em;
+        text-align: center;
+    }
 
-      .Info-Text {
-          font-size: 0.9em;
-      }
-  }
+    .Info-Text {
+        font-size: 0.9em;
+    }
+}
