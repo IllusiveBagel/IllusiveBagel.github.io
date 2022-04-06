@@ -2,10 +2,12 @@ import './Styles/App.css';
 import './Styles/Landing.css';
 import './Styles/Navigation.css';
 import './Styles/Info.css';
+import './Styles/Experience.css';
 import LandingPage from './Components/Landing/LandingPage';
 import Title from './Components/Landing/Title';
 import Navbar from './Components/Navigation/Navbar';
 import Info from './Components/About/Info';
+import Experience from './Components/Experience/Experience';
 import React from 'react';
 
 export default class App extends React.Component {
@@ -56,10 +58,13 @@ export default class App extends React.Component {
                 <section id="Skills" className="section flex" style={{ top: "201%" }}>
                     <h1>Skills</h1>
                 </section>
-                <section id="Experience" className="section flex" style={{ top: "302%" }}>
-                    <h1>Experience</h1>
+                <section id="Projects" className="section flex" style={{ top: "302%" }}>
+                    <h1>Projects</h1>
                 </section>
-                <section id="Contact" className="section flex" style={{ top: "403%" }}>
+                <section id="Experience" className="section flex" style={{ top: "403%" }}>
+                    <Experience />
+                </section>
+                <section id="Contact" className="section flex" style={{ top: "504%" }}>
                     <h1>Contact</h1>
                 </section>
             </>

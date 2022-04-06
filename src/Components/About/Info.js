@@ -6,7 +6,7 @@ export default class Info extends React.Component {
             <div className="Info-Container">
                 <div className="Info-Image-Container">
                     <img
-                        src="avatar.png"
+                        src="images/avatar.png"
                         alt="Avatar"
                         className="Info-Image"
                     />
@@ -22,7 +22,8 @@ export default class Info extends React.Component {
                         knowledge that I apply to make modern and effecient applications.
                         <br /> <br />
                         I am always looking for my next challenge and I am very keen to gain new knowledge
-                        along the way to improve my abilities as much as I can.
+                        along the way to improve my abilities as much as I can. My next career steps is to
+                        specialise in ReactJS and focus on all the front-end development skills I have gained.
                     </p>
                 </div>
             </div>
