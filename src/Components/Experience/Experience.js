@@ -1,37 +1,63 @@
 import React from 'react';
+import Modal from '../Common/Modal';
+import AST from './AST';
 
 export default class Info extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            show: false,
+            data: {},
+        };
+        this.showModal = this.showModal.bind(this);
+        this.hideModal = this.hideModal.bind(this);
+    }
+
+    showModal = (title, content) => {
+        this.setState({
+            show: true,
+            data: {
+                title: title,
+                content: content
+            } 
+        });
+    };
+
+    hideModal = () => {
+        this.setState({ show: false });
+    };
+
     render() {
         return(
             <div className="Experience-Container">
                 <div className="Hex">
                     <div className="Hex-Container">
-                        <div>
-                            <div>
+                        <div onClick={() => this.showModal("AST Group", <AST />)}>
+                            <div >
                                 <img src="images/ast.svg" alt="AST" />
                             </div>
                         </div>
-                        <div>
+                        <div onClick={() => this.showModal("SupplyPoint", <AST />)}>
                             <div>
                                 <img src="images/supplypoint.svg" alt="SupplyPoint" />
                             </div>
                         </div>
-                        <div>
+                        <div onClick={() => this.showModal("Toob", <AST />)}>
                             <div>
                                 <img src="images/toob.svg" alt="Toob" />
                             </div>
                         </div>
-                        <div>
+                        <div onClick={() => this.showModal("North Sails", <AST />)}>
                             <div>
                                 <img src="images/northsails.svg" alt="North Sails" />
                             </div>
                         </div>
-                        <div>
+                        <div onClick={() => this.showModal("Dootrix", <AST />)}>
                             <div>
                                 <img src="images/dootrix.svg" alt="Dootrix" />
                             </div>
                         </div>
-                        <div>
+                        <div onClick={() => this.showModal("Mi-Voice", <AST />)}>
                             <div>
                                 <img src="images/mivoice.svg" alt="Mi-Voice" />
                             </div>
@@ -50,6 +76,9 @@ export default class Info extends React.Component {
                         it's benefited me and my abilities as a developer.
                     </p>
                 </div>
+                <Modal show={this.state.show} title={this.state.data.title} handleClose={this.hideModal}>
+                    {this.state.data.content}
+                </Modal>
             </div>
         );
     }

@@ -3,6 +3,8 @@ import './Styles/Landing.css';
 import './Styles/Navigation.css';
 import './Styles/Info.css';
 import './Styles/Experience.css';
+import './Styles/Modal.css';
+import './Styles/Content.css';
 import LandingPage from './Components/Landing/LandingPage';
 import Title from './Components/Landing/Title';
 import Navbar from './Components/Navigation/Navbar';
