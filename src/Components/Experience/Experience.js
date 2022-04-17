@@ -1,6 +1,11 @@
 import React from 'react';
 import Modal from '../Common/Modal';
 import AST from './AST';
+import SupplyPoint from "./SupplyPoint";
+import Toob from "./Toob";
+import NorthSails from "./NorthSails";
+import Dootrix from "./Dootrix";
+import MiVoice from "./MiVoice";
 
 export default class Info extends React.Component {
     constructor() {
@@ -37,27 +42,27 @@ export default class Info extends React.Component {
                                 <img src="images/ast.svg" alt="AST" />
                             </div>
                         </div>
-                        <div onClick={() => this.showModal("SupplyPoint", <AST />)}>
+                        <div onClick={() => this.showModal("SupplyPoint", <SupplyPoint />)}>
                             <div>
                                 <img src="images/supplypoint.svg" alt="SupplyPoint" />
                             </div>
                         </div>
-                        <div onClick={() => this.showModal("Toob", <AST />)}>
+                        <div onClick={() => this.showModal("Toob", <Toob />)}>
                             <div>
                                 <img src="images/toob.svg" alt="Toob" />
                             </div>
                         </div>
-                        <div onClick={() => this.showModal("North Sails", <AST />)}>
+                        <div onClick={() => this.showModal("North Sails", <NorthSails />)}>
                             <div>
                                 <img src="images/northsails.svg" alt="North Sails" />
                             </div>
                         </div>
-                        <div onClick={() => this.showModal("Dootrix", <AST />)}>
+                        <div onClick={() => this.showModal("Dootrix", <Dootrix />)}>
                             <div>
                                 <img src="images/dootrix.svg" alt="Dootrix" />
                             </div>
                         </div>
-                        <div onClick={() => this.showModal("Mi-Voice", <AST />)}>
+                        <div onClick={() => this.showModal("Mi-Voice", <MiVoice />)}>
                             <div>
                                 <img src="images/mivoice.svg" alt="Mi-Voice" />
                             </div>
