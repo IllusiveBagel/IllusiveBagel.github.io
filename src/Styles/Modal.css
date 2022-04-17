@@ -1,6 +1,11 @@
 /*======================================================
                            Modal                      
   ======================================================*/
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 .modal {
     z-index: 100;
     position: fixed;
@@ -113,4 +118,23 @@
     color: #e31b6d;
     text-decoration: none;
     cursor: pointer;
+}
+
+/*======================================================
+                    Mobile Modal                     
+  ======================================================*/
+
+@media(max-width: 640px) {
+    .modal-content {
+        height: 95%;
+        width: 95%;
+        overflow-y: scroll;
+    }
+
+    .modal-header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
 }

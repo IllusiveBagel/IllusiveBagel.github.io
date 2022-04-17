@@ -1,3 +1,6 @@
+/*======================================================
+                           Modal                      
+  ======================================================*/
 .Content-Title {
     font-size: 2.5em;
     text-decoration: underline 5px #e31b6d;
@@ -40,4 +43,13 @@
     padding-bottom: 10px;
     color: white;
     background-color: #e31b6d;
+}
+
+/*======================================================
+                    Mobile Modal                     
+  ======================================================*/
+@media(max-width: 640px) {
+    .Content-Skill {
+        width: calc(50% - 5px);
+    }
 }

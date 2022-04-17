@@ -19,6 +19,8 @@ export default class Info extends React.Component {
     }
 
     showModal = (title, content) => {
+        const body = document.getElementsByTagName("body")[0];
+        body.className = "modal-open";
         this.setState({
             show: true,
             data: {
@@ -29,6 +31,8 @@ export default class Info extends React.Component {
     };
 
     hideModal = () => {
+        const body = document.getElementsByTagName("body")[0];
+        body.className = "";
         this.setState({ show: false });
     };
 

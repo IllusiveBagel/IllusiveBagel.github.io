@@ -91,6 +91,23 @@
     height: 88%;
   }
 
+  .Experience-Block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+  }
+
+  .Experience-Title {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .Experience-Text {
+    font-size: 0.9em;
+  }
+
   .Hex {
     display: flex;
     --s: 90px;
@@ -98,6 +115,8 @@
     --m: 2px;
     /* margin */
     --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+    width: 100%;
+    margin: auto;
   }
 
   .Hex-Container {
