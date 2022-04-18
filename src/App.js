@@ -5,11 +5,14 @@ import './Styles/Info.css';
 import './Styles/Experience.css';
 import './Styles/Modal.css';
 import './Styles/Content.css';
+import './Styles/Projects.css';
+import './Styles/Card.css';
 import LandingPage from './Components/Landing/LandingPage';
 import Title from './Components/Landing/Title';
 import Navbar from './Components/Navigation/Navbar';
 import Info from './Components/About/Info';
 import Experience from './Components/Experience/Experience';
+import Projects from "./Components/Projects/Projects";
 import React from 'react';
 
 export default class App extends React.Component {
@@ -61,7 +64,7 @@ export default class App extends React.Component {
                     <h1>Skills</h1>
                 </section>
                 <section id="Projects" className="section flex" style={{ top: "302%" }}>
-                    <h1>Projects</h1>
+                    <Projects />
                 </section>
                 <section id="Experience" className="section flex" style={{ top: "403%" }}>
                     <Experience />
