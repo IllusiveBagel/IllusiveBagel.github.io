@@ -13,7 +13,7 @@ export default class Modal extends React.Component {
             <div className={showHideClassName}>
                 <section className="modal-content">
                     <div className="modal-header">
-                        <span class="close" onClick={this.props.handleClose}>&times;</span>
+                        <span className="close" onClick={this.props.handleClose}>&times;</span>
                         <h2 className="modal-title">{this.props.title}</h2>
                     </div>
                     <div className="modal-body">
