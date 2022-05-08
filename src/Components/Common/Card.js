@@ -8,10 +8,10 @@ export default class Modal extends React.Component {
 
     render() {
         return (
-            <div className="Card">
+            <div className="Card" onClick={this.props.onClick}>
                 <img className="Card-Img" src={this.props.img} alt={this.props.title} />
                 <div className="Card-Body">
-                    <h1>{this.props.title}</h1>
+                    <h1 className="Card-Title">{this.props.title}</h1>
                     <p>{this.props.desc}</p>
                 </div>
             </div>

@@ -1,8 +1,12 @@
+/*======================================================
+                           Card                      
+  ======================================================*/
 .Card {
     width: calc(33% - 10px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .Card:hover {
@@ -16,4 +20,20 @@
 .Card-Img {
     width: 100%;
     border-radius: 5px 5px 0 0;
+}
+
+/*======================================================
+                        Mobile Card                      
+  ======================================================*/
+@media(max-width: 640px) {
+    .Card {
+        width: calc(50% - 10px);
+    }
+
+    .Card-Title {
+        font-size: 1.2em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
