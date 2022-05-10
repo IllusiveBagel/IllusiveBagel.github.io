@@ -39,16 +39,16 @@ export default class Projects extends React.Component {
                 <h1 className="Projects-Title">Projects</h1>
                 <div className="Projects-Card-Container">
                     <Card
+                        img="images/DBMLDocs.png"
+                        title="DBML Docs"
+                        desc="A React based tool for generating a site based on a DBML file"
+                        onClick={() => this.showModal('DBML Docs', <DBMLDocs />)}
+                    />
+                    <Card
                         img="images/Synaptic.png"
                         title="Synaptic Implementation"
                         desc="A simple implementation of the Synaptic Neural Network Library"
                         onClick={() => this.showModal('Synaptic Implementation', <Synaptic />)}
-                    />
-                    <Card
-                        img="images/DBMLDocs.png"
-                        title="DBMLDocs"
-                        desc="A React based tool for generating a site based on a DBML file"
-                        onClick={() => this.showModal('DBMLDocs', <DBMLDocs />)}
                     />
                 </div>
                 <Modal show={this.state.show} title={this.state.data.title} handleClose={this.hideModal}>

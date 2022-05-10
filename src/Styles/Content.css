@@ -19,6 +19,22 @@
     color: rgb(13, 26, 38);
 }
 
+.Content-Links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    margin: 0 15% 0 15%;
+}
+
+.Content-Link {
+    color: #e31b6d;
+    font-size: 1.2em;
+    width: calc(35% - 5px);
+    text-align: center;
+}
+
 .Content-Skills {
     display: flex;
     justify-content: center;
