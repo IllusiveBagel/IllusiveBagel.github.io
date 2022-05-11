@@ -7,12 +7,18 @@ import './Styles/Modal.css';
 import './Styles/Content.css';
 import './Styles/Projects.css';
 import './Styles/Card.css';
+import './Styles/ProgressRing.css';
+import './Styles/Skills.css';
+import './Styles/Skill.css';
+import './Styles/Contact.css';
 import LandingPage from './Components/Landing/LandingPage';
 import Title from './Components/Landing/Title';
 import Navbar from './Components/Navigation/Navbar';
 import Info from './Components/About/Info';
 import Experience from './Components/Experience/Experience';
 import Projects from "./Components/Projects/Projects";
+import Skills from "./Components/Skills/Skills";
+import Contact from "./Components/Contact/Contact";
 import React from 'react';
 
 export default class App extends React.Component {
@@ -61,7 +67,7 @@ export default class App extends React.Component {
                     <Info />
                 </section>
                 <section id="Skills" className="section flex" style={{ top: "201%" }}>
-                    <h1>Skills</h1>
+                    <Skills />
                 </section>
                 <section id="Projects" className="section flex" style={{ top: "302%" }}>
                     <Projects />
@@ -70,7 +76,7 @@ export default class App extends React.Component {
                     <Experience />
                 </section>
                 <section id="Contact" className="section flex" style={{ top: "504%" }}>
-                    <h1>Contact</h1>
+                    <Contact />
                 </section>
             </>
         );

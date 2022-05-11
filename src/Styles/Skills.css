@@ -1,0 +1,79 @@
+/*======================================================
+                       Skills Page                      
+  ======================================================*/
+.Skills-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 70%;
+  margin-top: 60px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 5px;
+}
+
+.Skills-Overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.Skills-Block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: calc(50% - 30px);
+  padding: 30px;
+}
+
+.Skills-Title {
+  width: 100%;
+  font-size: 2.5em;
+  text-decoration: underline 5px #e31b6d;
+  color: rgb(13, 26, 38);
+}
+
+.Skills-Status-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+/*======================================================
+                  Mobile Skills Page                      
+  ======================================================*/
+@media(max-width: 640px) {
+  .Skills-Container {
+    flex-direction: column;
+    width: 90%;
+    height: 88%;
+  }
+
+  .Skills-Overview {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+  }
+
+  .Skills-Block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 30px);
+    height: 50%;
+  }
+
+  .Skills-Title {
+    font-size: 1.8em;
+    text-align: center;
+  }
+}

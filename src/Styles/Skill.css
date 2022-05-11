@@ -1,0 +1,28 @@
+/*======================================================
+                           Skill                    
+  ======================================================*/
+.Skill {
+    width: calc(50% - 10px);
+}
+
+.Skill-Container {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.Skill-Status {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #e31b6d;
+}
+
+/*======================================================
+                    Skill Modal                     
+  ======================================================*/
+@media(max-width: 640px) {
+    .Skill {
+        width: calc(50% - 10px);
+    }
+}
