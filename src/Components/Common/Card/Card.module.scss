@@ -4,14 +4,13 @@
 
 .card {
     width: calc(33% - 10px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
     border-radius: 5px;
     cursor: pointer;
     background-color: rgba(68, 75, 95, 0.95);
 
     &:hover {
-        box-shadow: 0 8px 16px 0 rgba(4, 194, 201, 0.3);
+        width: calc(33% - 14px);
+        border: 2px solid rgba(227, 27, 109, 0.5);
     }
 
     @media(max-width: 640px) {
@@ -20,6 +19,8 @@
 }
 
 .cardTitle {
+    color: white;
+
     @media(max-width: 640px) {
         font-size: 1.2em;
         white-space: nowrap;
@@ -29,6 +30,7 @@
 }
 
 .cardBody {
+    color: white;
     padding: 2px 16px;
 }
 

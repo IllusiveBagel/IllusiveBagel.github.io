@@ -13,7 +13,7 @@
   width: 100vw;
   max-width: 100%;
   z-index: 10;
-  border-bottom: 2px solid rgba(255,255,255,0.5);
+  border-bottom: 2px solid rgba(227, 27, 109, 0.5);
 
   ul {
     display: inline-block;
@@ -30,7 +30,7 @@
   }
 
   li a {
-    color: rgb(13, 26, 38);
+    color: white;
     display: block;
     font-size: 0.7em;
     height: 50px;
@@ -120,6 +120,7 @@
   height: 60px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
 
   &:hover {
     color: #FF3F8E;

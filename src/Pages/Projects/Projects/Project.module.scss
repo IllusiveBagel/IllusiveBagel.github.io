@@ -3,14 +3,14 @@
   ======================================================*/
 .ProjectTitle {
     font-size: 2.5em;
-    text-decoration: underline 5px #e31b6d;
-    color: rgb(13, 26, 38);
+    text-decoration: underline 2px rgba(227, 27, 109, 0.8);
+    color: white;
 }
 
 .ProjectText {
     width: 100%;
     text-align: justify;
-    color: rgb(13, 26, 38);
+    color: white;
 }
 
 .ProjectLinks {
@@ -23,7 +23,7 @@
 }
 
 .ProjectLink {
-    color: #e31b6d;
+    color: rgba(227, 27, 109, 0.8);
     font-size: 1.2em;
     width: calc(35% - 5px);
     text-align: center;

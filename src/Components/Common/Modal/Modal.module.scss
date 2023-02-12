@@ -4,8 +4,9 @@
 
 .modalHeader {
     padding: 10px 16px;
-    background-color: #252934;
+    background-color: rgba(68, 75, 95, 0.95);
     color: white;
+    border-bottom: 2px solid rgba(227, 27, 109, 0.5);
 
     @media(max-width: 640px) {
         position: sticky;
@@ -81,7 +82,7 @@
 
 .modalBody {
     padding: 3% 10%;
-    background-color: rgba(68, 75, 95, 0.95);
+    background-color: #252934;
 }
 
 .modal {
@@ -105,7 +106,7 @@
 }
 
 .close {
-    color: #000;
+    color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;

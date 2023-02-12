@@ -9,9 +9,10 @@
     width: 75%;
     height: 70%;
     margin-top: 60px;
-    background-color: rgba(68, 75, 95, 0.95);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    border-radius: 5px;
+    //background-color: rgba(68, 75, 95, 0.95);
+    //box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    //border: 2px solid white;
+    //border-radius: 5px;
 
     @media(max-width: 640px) {
         flex-direction: column;
@@ -33,6 +34,9 @@
 }
 
 .aboutImage {
+    border: 5px solid rgba(227, 27, 109, 0.8);
+    border-radius: 50%;
+
     @media(max-width: 640px) {
         width: 100%;
     }
@@ -52,8 +56,8 @@
 
 .aboutTitle {
     font-size: 2.5em;
-    text-decoration: underline 5px #e31b6d;
-    color: rgb(13, 26, 38);
+    text-decoration: underline 2px rgba(227, 27, 109, 0.8);
+    color: white;
 
     @media(max-width: 640px) {
         font-size: 1.8em;
@@ -64,7 +68,7 @@
 .aboutText {
     width: 85%;
     text-align: justify;
-    color: rgb(13, 26, 38);
+    color: white;
 
     @media(max-width: 640px) {
         font-size: 0.9em;
