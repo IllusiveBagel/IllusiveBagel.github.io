@@ -3,7 +3,8 @@
   ======================================================*/
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+  background-color: #252934; 
 }
 
 a {
@@ -28,7 +29,7 @@ h1 {
   height: 100%;
   width: 100vw;
   max-width: 100%;
-  background-color: #f2f2f2;
+  background-color: #252934;
 }
 
 .flex {

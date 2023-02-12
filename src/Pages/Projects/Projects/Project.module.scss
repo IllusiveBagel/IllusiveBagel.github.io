@@ -1,0 +1,30 @@
+/*======================================================
+                           Modal                      
+  ======================================================*/
+.ProjectTitle {
+    font-size: 2.5em;
+    text-decoration: underline 5px #e31b6d;
+    color: rgb(13, 26, 38);
+}
+
+.ProjectText {
+    width: 100%;
+    text-align: justify;
+    color: rgb(13, 26, 38);
+}
+
+.ProjectLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    margin: 0 15% 0 15%;
+}
+
+.ProjectLink {
+    color: #e31b6d;
+    font-size: 1.2em;
+    width: calc(35% - 5px);
+    text-align: center;
+}

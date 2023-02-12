@@ -1,0 +1,51 @@
+/*======================================================
+                           Modal                      
+  ======================================================*/
+
+.experienceTitle {
+    font-size: 2.5em;
+    text-decoration: underline 5px #e31b6d;
+    color: rgb(13, 26, 38);
+}
+
+.experienceSubTitle {
+    font-size: 2em;
+    text-decoration: underline 5px #e31b6d;
+    color: rgb(13, 26, 38);
+}
+
+.experienceText {
+    width: 100%;
+    text-align: justify;
+    color: rgb(13, 26, 38);
+}
+
+.experienceSkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.experienceSkill {
+    width: calc(33% - 5px);
+
+    @media(max-width: 640px) {
+        width: calc(50% - 5px);
+    }
+}
+
+.experienceSkillContainer {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.experienceSkillStatus {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #e31b6d;
+}

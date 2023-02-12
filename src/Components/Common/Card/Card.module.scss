@@ -1,0 +1,38 @@
+/*======================================================
+                           Card                      
+  ======================================================*/
+
+.card {
+    width: calc(33% - 10px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(68, 75, 95, 0.95);
+
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(4, 194, 201, 0.3);
+    }
+
+    @media(max-width: 640px) {
+        width: calc(50% - 10px);
+    }
+}
+
+.cardTitle {
+    @media(max-width: 640px) {
+        font-size: 1.2em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.cardBody {
+    padding: 2px 16px;
+}
+
+.cardImg {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
