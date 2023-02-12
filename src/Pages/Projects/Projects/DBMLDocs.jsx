@@ -1,12 +1,12 @@
 import React from "react";
 
-import styles from "./Project.module.scss";
+import styles from "../../../Styles/Common/ModalContent.module.scss";
 
 const DBMLDocs = () => {
     return (
         <div>
-            <h1 className={styles.ProjectTitle}>DBML Docs</h1>
-            <p className={styles.ProjectText}>
+            <h1 className={styles.modalTitle}>DBML Docs</h1>
+            <p className={styles.modalText}>
                 This project is an Open-Source project that aims to solve the issues of Database
                 design and management. The web app accepts a DMBL file and converts it to an
                 easily readable and fluent site. The reason I started this project was to help
@@ -28,9 +28,9 @@ const DBMLDocs = () => {
                 and more up to date.
             </p>
             <hr />
-            <div className={styles.ProjectLinks}>
-                <a className={styles.ProjectLink} href="https://github.com/IllusiveBagel/DBMLDocs" target="_blank" rel="noreferrer">Github</a>
-                <a className={styles.ProjectLink} href="https://github.com/IllusiveBagel/DBMLDocs" target="_blank" rel="noreferrer">Live Demo</a>
+            <div className={styles.modalLinks}>
+                <a href="https://github.com/IllusiveBagel/DBMLDocs" target="_blank" rel="noreferrer">Github</a>
+                <a href="https://github.com/IllusiveBagel/DBMLDocs" target="_blank" rel="noreferrer">Live Demo</a>
             </div>
         </div>
     );

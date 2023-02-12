@@ -1,12 +1,12 @@
 import React from 'react';
 
-import styles from './Experiences.module.scss';
+import styles from '../../../Styles/Common/ModalContent.module.scss';
 
 const NorthSails = () => {
     return (
         <div>
-            <h1 className={styles.experienceTitle}>North Sails</h1>
-            <p className={styles.experienceText}>
+            <h1 className={styles.modalTitle}>North Sails</h1>
+            <p className={styles.modalText}>
                 My role at North Sails was as a Full Stack developer helping build and
                 maintain an internal sales and stock management system. This system was
                 built with a C# and .NET Core REST API and a ReactJS Front End using
@@ -31,42 +31,42 @@ const NorthSails = () => {
                 more proficient at displaying large amounts of data in a user friendly
                 way.
             </p>
-            <h1 className={styles.experienceSubTitle}>Skills Used</h1>
-            <div className={styles.experienceSkills}>
-                <div className={styles.experienceSkill}>
+            <h1 className={styles.modalSubTitle}>Skills Used</h1>
+            <div className={styles.modalSkills}>
+                <div className={styles.modalSkill}>
                     <p>React</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "80%" }}></div>
+                    <div>
+                        <div style={{ width: "80%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>C#</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "40%" }}></div>
+                    <div>
+                        <div style={{ width: "40%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>Visual Basic</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "15%" }}></div>
+                    <div>
+                        <div style={{ width: "15%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>REST API's</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "60%" }}></div>
+                    <div>
+                        <div style={{ width: "60%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>MaterialUI</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "80%" }}></div>
+                    <div>
+                        <div style={{ width: "80%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>TSQL</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "40%" }}></div>
+                    <div>
+                        <div style={{ width: "40%" }}></div>
                     </div>
                 </div>
             </div>

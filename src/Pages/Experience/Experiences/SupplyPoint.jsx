@@ -1,12 +1,12 @@
 import React from 'react';
 
-import styles from './Experiences.module.scss';
+import styles from '../../../Styles/Common/ModalContent.module.scss';
 
 const SupplyPoint = () => {
     return (
         <div>
-            <h1 className={styles.experienceTitle}>SupplyPoint</h1>
-            <p className={styles.experienceText}>
+            <h1 className={styles.modalTitle}>SupplyPoint</h1>
+            <p className={styles.modalText}>
                 I joined SupplyPoint as a junior full-stack developer and mainly helped
                 with bug fixes in a couple different REST API's when I first started.
                 This was a valuable learning point for me as it gave me the foundation
@@ -24,42 +24,42 @@ const SupplyPoint = () => {
                 very important step in helping me move my career forward. This is also
                 where I started to use a lot of the technologies that I now specialise in.
             </p>
-            <h1 className={styles.experienceSubTitle}>Skills Used</h1>
-            <div className={styles.experienceSkills}>
-                <div className={styles.experienceSkill}>
+            <h1 className={styles.modalSubTitle}>Skills Used</h1>
+            <div className={styles.modalSkills}>
+                <div className={styles.modalSkill}>
                     <p>C#</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "80%" }}></div>
+                    <div>
+                        <div style={{ width: "80%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>Javascript</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "50%" }}></div>
+                    <div>
+                        <div style={{ width: "50%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>React</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "80%" }}></div>
+                    <div>
+                        <div style={{ width: "80%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>CSS</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "60%" }}></div>
+                    <div>
+                        <div style={{ width: "60%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>REST API's</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "70%" }}></div>
+                    <div>
+                        <div style={{ width: "70%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>Documentation</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "40%" }}></div>
+                    <div>
+                        <div style={{ width: "40%" }}></div>
                     </div>
                 </div>
             </div>

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import styles from './Experiences.module.scss';
+import styles from '../../../Styles/Common/ModalContent.module.scss';
 
 const Toob = () => {
     return (
         <div>
-            <h1 className={styles.experienceTitle}>Toob</h1>
-            <p className={styles.experienceText}>
+            <h1 className={styles.modalTitle}>Toob</h1>
+            <p className={styles.modalText}>
                 I joined toob as an Application Systems Specialist which to start with
                 meant I was responsible for a variety of things. Toob was a start up and
                 I joined quite early in the hiring process. My main responsibilities was
@@ -26,42 +26,42 @@ const Toob = () => {
                 design process so I gained a lot of useful knowledge about how to consider the
                 client.
             </p>
-            <h1 className={styles.experienceSubTitle}>Skills Used</h1>
-            <div className={styles.experienceSkills}>
-                <div className={styles.experienceSkill}>
+            <h1 className={styles.modalSubTitle}>Skills Used</h1>
+            <div className={styles.modalSkills}>
+                <div className={styles.modalSkill}>
                     <p>C#</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "80%" }}></div>
+                    <div>
+                        <div style={{ width: "80%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>Javascript</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "50%" }}></div>
+                    <div>
+                        <div style={{ width: "50%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>CSS</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "60%" }}></div>
+                    <div>
+                        <div style={{ width: "60%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>REST API's</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "70%" }}></div>
+                    <div>
+                        <div style={{ width: "70%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>CPE Configuration</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "50%" }}></div>
+                    <div>
+                        <div style={{ width: "50%" }}></div>
                     </div>
                 </div>
-                <div className={styles.experienceSkill}>
+                <div className={styles.modalSkill}>
                     <p>Linux Admin</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "40%" }}></div>
+                    <div>
+                        <div style={{ width: "40%" }}></div>
                     </div>
                 </div>
             </div>

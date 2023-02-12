@@ -1,21 +1,21 @@
 import React from 'react';
 
-import styles from './Experiences.module.scss';
+import styles from '../../../Styles/Common/ModalContent.module.scss';
 
 const Dootrix = () => {
     return (
         <div>
-            <h1 className={styles.experienceTitle}>Dootrix</h1>
-            <p className={styles.experienceText}>
+            <h1 className={styles.modalTitle}>Dootrix</h1>
+            <p className={styles.modalText}>
                 To Be Written
                 <br /><br />
             </p>
-            <h1 className={styles.experienceSubTitle}>Skills Used</h1>
-            <div className={styles.experienceSkills}>
-                <div className={styles.experienceSkill}>
+            <h1 className={styles.modalSubTitle}>Skills Used</h1>
+            <div className={styles.modalSkills}>
+                <div className={styles.modalSkill}>
                     <p>To Be Written</p>
-                    <div className={styles.experienceSkillContainer}>
-                        <div className={styles.experienceSkillStatus} style={{ width: "80%" }}></div>
+                    <div>
+                        <div style={{ width: "80%" }}></div>
                     </div>
                 </div>
             </div>

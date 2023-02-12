@@ -1,12 +1,12 @@
 import React from 'react';
 
-import styles from './Project.module.scss';
+import styles from '../../../Styles/Common/ModalContent.module.scss';
 
 const Synaptic = () => {
     return (
         <div>
-            <h1 className={styles.ProjectTitle}>Synaptic Implementation</h1>
-            <p className={styles.ProjectText}>
+            <h1 className={styles.modalTitle}>Synaptic Implementation</h1>
+            <p className={styles.modalText}>
                 The Synaptic Implementation is a simple machine learning implementation where creatures
                 will search for eachother and follow eachother around the screen. This project is a
                 recreation of one of my first projects I made when first learning about Machine Learning.
@@ -27,9 +27,9 @@ const Synaptic = () => {
                 around the screen.
             </p>
             <hr />
-            <div className={styles.ProjectLinks}>
-                <a className={styles.ProjectLink} href="https://github.com/IllusiveBagel/Synaptic-Implementation" target="_blank" rel="noreferrer">Github</a>
-                <a className={styles.ProjectLink} href="https://illusivebagel.github.io/Synaptic-Implementation/" target="_blank" rel="noreferrer">Live Demo</a>
+            <div className={styles.modalLinks}>
+                <a href="https://github.com/IllusiveBagel/Synaptic-Implementation" target="_blank" rel="noreferrer">Github</a>
+                <a href="https://illusivebagel.github.io/Synaptic-Implementation/" target="_blank" rel="noreferrer">Live Demo</a>
             </div>
         </div>
     )
