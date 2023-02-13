@@ -3,13 +3,17 @@
   ======================================================*/
 
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: calc(33% - 10px);
     border-radius: 5px;
     cursor: pointer;
     background-color: rgba(68, 75, 95, 0.95);
+    box-sizing: border-box;
+    max-height: calc(50% - 10px);
 
     &:hover {
-        width: calc(33% - 14px);
         border: 2px solid rgba(227, 27, 109, 0.5);
     }
 
@@ -19,7 +23,10 @@
 }
 
 .cardTitle {
+    box-sizing: border-box;
     color: white;
+    text-align: center;
+    margin: auto;
 
     @media(max-width: 640px) {
         font-size: 1.2em;
@@ -29,12 +36,8 @@
     }
 }
 
-.cardBody {
-    color: white;
-    padding: 2px 16px;
-}
-
 .cardImg {
+    box-sizing: border-box;
     width: 100%;
     border-radius: 5px 5px 0 0;
 }

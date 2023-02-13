@@ -28,13 +28,11 @@ const Projects = () => {
                 <Card
                     img="images/DBMLDocs.png"
                     title="DBML Docs"
-                    desc="A React based tool for generating a site based on a DBML file"
                     onClick={() => handleShowModal('DBML Docs', <DBMLDocs />)}
                 />
                 <Card
                     img="images/Synaptic.png"
                     title="Synaptic Implementation"
-                    desc="A simple implementation of the Synaptic Neural Network Library"
                     onClick={() => handleShowModal('Synaptic Implementation', <Synaptic />)}
                 />
             </div>
