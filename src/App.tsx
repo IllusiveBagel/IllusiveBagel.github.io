@@ -45,13 +45,6 @@ function App() {
                 <h1>About</h1>
             </section>
             <section
-                id="Blog"
-                className={classNames(styles.section, styles.flex)}
-                style={{ top: '200%' }}
-            >
-                <h1>Blog</h1>
-            </section>
-            <section
                 id="Projects"
                 className={classNames(styles.section, styles.flex)}
                 style={{ top: '300%' }}

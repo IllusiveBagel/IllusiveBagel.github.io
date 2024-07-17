@@ -34,9 +34,6 @@ const Navbar = ({ stick }: NavbarProps) => {
                                 <a href="#About">About</a>
                             </li>
                             <li>
-                                <a href="#Blog">Blog</a>
-                            </li>
-                            <li>
                                 <a href="#Projects">Projects</a>
                             </li>
                             <li>
@@ -75,11 +72,6 @@ const Navbar = ({ stick }: NavbarProps) => {
                             <li>
                                 <a href="#About" onClick={handleMenuClick}>
                                     About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Blog" onClick={handleMenuClick}>
-                                    Blog
                                 </a>
                             </li>
                             <li>
