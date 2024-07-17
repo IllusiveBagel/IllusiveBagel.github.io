@@ -1,0 +1,131 @@
+@import '../../colors.scss';
+
+/*======================================================
+                           Modal                      
+  ======================================================*/
+
+.modalHeader {
+    padding: 10px 16px;
+    background-color: #{$base02};
+    color: #{$base1};
+    border-bottom: 2px solid #{$magenta};
+
+    @media (max-width: 640px) {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    animation: #{$str};
+}
+
+@include keyframes(fadeIn) {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@include keyframes(animateIn) {
+    from {
+        left: 0;
+        opacity: 0;
+    }
+
+    to {
+        left: 50%;
+        opacity: 1;
+    }
+}
+
+// Make Animations
+.modalContent {
+    position: fixed;
+    background-color: #{$base03};
+    width: 60%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //border: 1px solid #888;
+    box-shadow:
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @include animation('animateIn 0.4s');
+    border-radius: 5px;
+    overflow: hidden;
+
+    @media (max-width: 640px) {
+        height: 95%;
+        width: 95%;
+        overflow-y: scroll;
+    }
+}
+
+.modalTitle {
+    margin: 0;
+}
+
+.modalBody {
+    padding: 3% 10%;
+    background-color: #{$base03};
+}
+
+.modal {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    @include animation('fadeIn 0.3s');
+}
+
+.displayBlock {
+    display: block;
+}
+
+.displayNone {
+    display: none;
+}
+
+.close {
+    color: #{$base1};
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: auto;
+    line-height: 100%;
+
+    &:hover,
+    &:focus {
+        color: #{$magenta};
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+// OLD
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+}

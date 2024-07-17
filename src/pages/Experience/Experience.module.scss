@@ -1,0 +1,134 @@
+@import '../../colors.scss';
+
+/*======================================================
+                     Experience Page                      
+  ======================================================*/
+
+.experienceContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 70%;
+    margin-top: 60px;
+
+    @media (max-width: 640px) {
+        flex-direction: column-reverse;
+        width: 90%;
+        height: 88%;
+    }
+}
+
+.experienceBlock {
+    width: 50%;
+
+    @media (max-width: 640px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.experienceTitle {
+    font-size: 2.5em;
+    text-decoration: underline 2px #{$magenta};
+    color: #{$base1};
+
+    @media (max-width: 640px) {
+        font-size: 1.8em;
+        text-align: center;
+    }
+}
+
+.experienceText {
+    width: 85%;
+    text-align: justify;
+    color: #{$base1};
+
+    @media (max-width: 640px) {
+        font-size: 0.9em;
+    }
+}
+
+.hex {
+    display: flex;
+    --s: 100px;
+    /* size  */
+    --m: 4px;
+    /* margin */
+    --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+    width: 50%;
+
+    @media (max-width: 640px) {
+        display: flex;
+        --s: 90px;
+        /* size  */
+        --m: 2px;
+        /* margin */
+        --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.hexContainer {
+    font-size: 0;
+    /*disable white space between inline block element */
+    width: 70%;
+    padding: 15%;
+
+    div {
+        width: var(--s);
+        margin: var(--m);
+        height: calc(var(--s) * 1.1547);
+        display: inline-block;
+        font-size: initial;
+        clip-path: polygon(
+            0% 25%,
+            0% 75%,
+            50% 100%,
+            100% 75%,
+            100% 25%,
+            50% 0%
+        );
+        background: #{$base0};
+        margin-bottom: calc(var(--m) - var(--s) * 0.2885);
+        overflow: hidden;
+
+        &:hover {
+            background: #{$base01};
+        }
+    }
+
+    div div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    div div img {
+        width: 90%;
+    }
+
+    &::before {
+        content: '';
+        width: calc(var(--s) / 2 + var(--m));
+        float: left;
+        height: 120%;
+        shape-outside: repeating-linear-gradient(
+            transparent 0 calc(var(--f) - 3px),
+            #000 0 var(--f)
+        );
+    }
+
+    @media (max-width: 640px) {
+        width: 90%;
+        padding: 5%;
+        padding-top: 0;
+    }
+}
