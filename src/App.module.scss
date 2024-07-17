@@ -1,0 +1,45 @@
+@import './colors.scss';
+
+/*======================================================
+                          Elements
+  ======================================================*/
+
+html {
+    scroll-behavior: smooth;
+    background-color: #{$base03};
+}
+
+a {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    color: white;
+}
+
+/*======================================================
+                          Common                          
+  ======================================================*/
+
+.section {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    max-width: 100%;
+    background-color: #{$base03};
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
