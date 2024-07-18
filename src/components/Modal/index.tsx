@@ -29,7 +29,7 @@ const Modal = ({ open, experience, handleClose }: ModalProps) => {
                     <h2 className={styles.modalSubTitle}>
                         {experience.position}
                     </h2>
-                    <p className={styles.modalText}>{experience.description}</p>
+                    {experience.description}
                 </div>
             </section>
         </div>

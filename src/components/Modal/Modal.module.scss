@@ -77,6 +77,16 @@
         width: 95%;
         overflow-y: scroll;
     }
+
+    p {
+        width: 100%;
+        text-align: justify;
+        color: #{$base1};
+
+        @media (max-width: 640px) {
+            font-size: 0.9em;
+        }
+    }
 }
 
 .modalTitle {
@@ -134,6 +144,10 @@ body.modal-open {
     width: 100%;
     text-align: justify;
     color: #{$base1};
+
+    @media (max-width: 640px) {
+        font-size: 0.9em;
+    }
 }
 
 .modalSubTitle {

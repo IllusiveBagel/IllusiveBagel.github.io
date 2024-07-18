@@ -29,9 +29,12 @@ const Experience = () => {
         <div className={styles.experienceContainer}>
             <div className={styles.hex}>
                 <div className={styles.hexContainer}>
-                    {experiences.map((experience) => {
+                    {experiences.map((experience, idx) => {
                         return (
-                            <div onClick={() => handleShowModal(experience)}>
+                            <div
+                                onClick={() => handleShowModal(experience)}
+                                key={idx}
+                            >
                                 <div>
                                     <img
                                         src={experience.logo}

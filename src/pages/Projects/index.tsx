@@ -8,9 +8,13 @@ import styles from './Projects.module.scss';
 const Projects = () => {
     return (
         <div className={styles.projectsContainer}>
-            {projects.map((project) => {
+            {projects.map((project, idx) => {
                 return (
-                    <a className={styles.projectsCard} href={project.link}>
+                    <a
+                        className={styles.projectsCard}
+                        href={project.link}
+                        key={idx}
+                    >
                         <h1>
                             {project.title}
                             <FontAwesomeIcon
@@ -20,9 +24,12 @@ const Projects = () => {
                         </h1>
                         <p>{project.description}</p>
                         <div className={styles.projectsTagContainer}>
-                            {project.tags.map((tag) => {
+                            {project.tags.map((tag, idx) => {
                                 return (
-                                    <div className={styles.projectsTag}>
+                                    <div
+                                        className={styles.projectsTag}
+                                        key={idx}
+                                    >
                                         {tag}
                                     </div>
                                 );
