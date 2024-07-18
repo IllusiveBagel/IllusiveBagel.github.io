@@ -129,3 +129,15 @@ body.modal-open {
     height: 100vh;
     overflow-y: hidden;
 }
+
+.modalText {
+    width: 100%;
+    text-align: justify;
+    color: #{$base1};
+}
+
+.modalSubTitle {
+    font-size: 2em;
+    text-decoration: underline 2px #{$magenta};
+    color: #{$base1};
+}

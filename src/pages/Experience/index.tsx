@@ -1,24 +1,24 @@
-import { ReactElement, useState } from 'react';
+import { useState } from 'react';
 import Modal from '../../components/Modal';
-import ast from '../../assets/images/ast.svg';
-import supplypoint from '../../assets/images/supplypoint.svg';
-import toob from '../../assets/images/toob.svg';
-import northsails from '../../assets/images/northsails.svg';
-import dootrix from '../../assets/images/dootrix.svg';
-import mivoice from '../../assets/images/mivoice.svg';
-import autoprotect from '../../assets/images/autoprotect.svg';
+import experiences from '../../data/experiences';
+import { Experience as ExperienceType } from '../../types';
 
 import styles from './Experience.module.scss';
 
 const Experience = () => {
     const [showModal, setShowModal] = useState(false);
-    const [modalTitle, setModalTitle] = useState('');
-    const [modalContent, setModalContent] = useState(<></>);
+    const [modalContent, setModalContent] = useState<ExperienceType>({
+        company: '',
+        position: '',
+        startDate: '',
+        endDate: '',
+        description: <></>,
+        logo: '',
+    });
 
-    const handleShowModal = (title: string, content: ReactElement) => {
+    const handleShowModal = (experience: ExperienceType) => {
         setShowModal(true);
-        setModalTitle(title);
-        setModalContent(content);
+        setModalContent(experience);
     };
 
     const handleCloseModal = () => {
@@ -29,41 +29,18 @@ const Experience = () => {
         <div className={styles.experienceContainer}>
             <div className={styles.hex}>
                 <div className={styles.hexContainer}>
-                    <div onClick={() => handleShowModal('AST Group', <></>)}>
-                        <div>
-                            <img src={ast} alt="AST" />
-                        </div>
-                    </div>
-                    <div onClick={() => handleShowModal('SupplyPoint', <></>)}>
-                        <div>
-                            <img src={supplypoint} alt="SupplyPoint" />
-                        </div>
-                    </div>
-                    <div onClick={() => handleShowModal('Toob', <></>)}>
-                        <div>
-                            <img src={toob} alt="Toob" />
-                        </div>
-                    </div>
-                    <div onClick={() => handleShowModal('North Sails', <></>)}>
-                        <div>
-                            <img src={northsails} alt="North Sails" />
-                        </div>
-                    </div>
-                    <div onClick={() => handleShowModal('Dootrix', <></>)}>
-                        <div>
-                            <img src={dootrix} alt="Dootrix" />
-                        </div>
-                    </div>
-                    <div onClick={() => handleShowModal('Mi-Voice', <></>)}>
-                        <div>
-                            <img src={mivoice} alt="Mi-Voice" />
-                        </div>
-                    </div>
-                    <div onClick={() => handleShowModal('Autoprotect', <></>)}>
-                        <div>
-                            <img src={autoprotect} alt="Autoprotect" />
-                        </div>
-                    </div>
+                    {experiences.map((experience) => {
+                        return (
+                            <div onClick={() => handleShowModal(experience)}>
+                                <div>
+                                    <img
+                                        src={experience.logo}
+                                        alt={experience.company}
+                                    />
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
             <div className={styles.experienceBlock}>
@@ -84,11 +61,9 @@ const Experience = () => {
             </div>
             <Modal
                 open={showModal}
-                title={modalTitle}
                 handleClose={handleCloseModal}
-            >
-                {modalContent}
-            </Modal>
+                experience={modalContent}
+            />
         </div>
     );
 };
