@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { CSSBattle } from '../../components/Icons';
 
 import dev from '../../assets/images/dev.jpeg';
 
@@ -43,6 +44,13 @@ const About = () => {
                     <a href="https://github.com/IllusiveBagel">
                         <FontAwesomeIcon
                             icon={faGithub}
+                            className={styles.aboutIcon}
+                            size="2x"
+                        />
+                    </a>
+                    <a href="https://cssbattle.dev/player/illusivebagel">
+                        <FontAwesomeIcon
+                            icon={CSSBattle}
                             className={styles.aboutIcon}
                             size="2x"
                         />

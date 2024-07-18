@@ -1,0 +1,59 @@
+@import '../../colors.scss';
+
+/*======================================================
+                     Projects Page                      
+  ======================================================*/
+.projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    max-height: 90%;
+    margin-top: 60px;
+
+    @media (max-width: 640px) {
+        width: 90%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+}
+
+.projectsCard {
+    width: calc(33% - 40px);
+    height: calc(33% - 40px);
+    background-color: rgba($base02, 0.6);
+    border-radius: 12px;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+
+    &:hover {
+        background-color: #{$base02};
+        cursor: pointer;
+    }
+
+    @media (max-width: 640px) {
+        width: calc(100% - 20px);
+        height: fit-content;
+        margin: 0 0 20px 0;
+    }
+}
+
+.projectsLink {
+    margin-left: 10px;
+    color: #{$base1};
+}
+
+.projectsTagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.projectsTag {
+    width: fit-content;
+    padding: 2px 5px;
+    border: 2px solid #{$magenta};
+    border-radius: 20px;
+    background-color: transparent;
+    color: #{$magenta};
+    margin-right: 10px;
+}
