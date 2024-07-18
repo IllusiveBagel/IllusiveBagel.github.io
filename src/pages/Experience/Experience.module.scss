@@ -93,12 +93,12 @@
             100% 25%,
             50% 0%
         );
-        background: #{$base0};
+        background: rgba($base0, 0.5);
         margin-bottom: calc(var(--m) - var(--s) * 0.2885);
         overflow: hidden;
 
         &:hover {
-            background: #{$base01};
+            background: #{$base0};
         }
     }
 

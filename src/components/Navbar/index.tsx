@@ -34,13 +34,10 @@ const Navbar = ({ stick }: NavbarProps) => {
                                 <a href="#About">About</a>
                             </li>
                             <li>
-                                <a href="#Projects">Projects</a>
-                            </li>
-                            <li>
                                 <a href="#Experience">Experience</a>
                             </li>
                             <li>
-                                <a href="#Contact">Contact</a>
+                                <a href="#Projects">Projects</a>
                             </li>
                         </ul>
                     </ScrollSpy>
@@ -75,18 +72,13 @@ const Navbar = ({ stick }: NavbarProps) => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#Projects" onClick={handleMenuClick}>
-                                    Projects
-                                </a>
-                            </li>
-                            <li>
                                 <a href="#Experience" onClick={handleMenuClick}>
                                     Experience
                                 </a>
                             </li>
                             <li>
-                                <a href="#Contact" onClick={handleMenuClick}>
-                                    Contact
+                                <a href="#Projects" onClick={handleMenuClick}>
+                                    Projects
                                 </a>
                             </li>
                         </ul>

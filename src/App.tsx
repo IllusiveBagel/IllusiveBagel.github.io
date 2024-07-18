@@ -4,7 +4,9 @@ import classNames from 'classnames';
 import Navbar from './components/Navbar';
 import LandingPage from './pages/Landing';
 import Title from './pages/Landing/Title';
+import About from './pages/About';
 import Experience from './pages/Experience';
+import Projects from './pages/Projects';
 
 import styles from './App.module.scss';
 
@@ -42,28 +44,21 @@ function App() {
                 className={classNames(styles.section, styles.flex)}
                 style={{ top: '100%' }}
             >
-                <h1>About</h1>
+                <About />
+            </section>
+            <section
+                id="Experience"
+                className={classNames(styles.section, styles.flex)}
+                style={{ top: '200%' }}
+            >
+                <Experience />
             </section>
             <section
                 id="Projects"
                 className={classNames(styles.section, styles.flex)}
                 style={{ top: '300%' }}
             >
-                <h1>Projects</h1>
-            </section>
-            <section
-                id="Experience"
-                className={classNames(styles.section, styles.flex)}
-                style={{ top: '400%' }}
-            >
-                <Experience />
-            </section>
-            <section
-                id="Contact"
-                className={classNames(styles.section, styles.flex)}
-                style={{ top: '500%' }}
-            >
-                <h1>Contact</h1>
+                <Projects />
             </section>
         </>
     );

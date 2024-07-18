@@ -1,0 +1,80 @@
+@import '../../colors.scss';
+
+/*======================================================
+                     About Page                      
+  ======================================================*/
+
+.aboutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 70%;
+    margin-top: 60px;
+
+    @media (max-width: 640px) {
+        flex-direction: column;
+        width: 90%;
+        height: 88%;
+    }
+}
+
+.aboutBlock {
+    width: 50%;
+
+    @media (max-width: 640px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.aboutTitle {
+    font-size: 2.5em;
+    text-decoration: underline 2px #{$magenta};
+    color: #{$base1};
+
+    @media (max-width: 640px) {
+        font-size: 1.8em;
+        text-align: center;
+    }
+}
+
+.aboutText {
+    width: 85%;
+    text-align: justify;
+    color: #{$base1};
+
+    @media (max-width: 640px) {
+        font-size: 0.9em;
+    }
+}
+
+.aboutLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin-top: 30px;
+
+    .aboutIcon {
+        color: #{$base1};
+        margin: 0 30px;
+
+        &:hover {
+            color: #{$magenta};
+        }
+    }
+}
+
+.aboutImage {
+    width: 40%;
+    opacity: 0.6;
+    margin: 5%;
+
+    @media (max-width: 640px) {
+        width: 100%;
+    }
+}

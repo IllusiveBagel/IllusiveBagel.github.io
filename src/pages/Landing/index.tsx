@@ -3,6 +3,28 @@ import { CanvasSpace, Form, Line, Vector, Const } from 'ptjs';
 
 import styles from './Landing.module.scss';
 
+interface Vector {
+    x: number;
+    y: number;
+    add(v: Vector): Vector;
+    subtract(v: Vector): Vector;
+    multiply(scalar: number): Vector;
+    divide(scalar: number): Vector;
+    magnitude(): number;
+    normalize(): Vector;
+    dot(v: Vector): number;
+    cross(v: Vector): number;
+    moveBy(v: Vector): Vector;
+    brightness: number;
+    rotate2D(angle: number, center: Vector): void;
+}
+
+interface Pt {
+    rotate2D(angle: number, center: Vector): void;
+    brightness: number;
+    // Add other properties or methods as needed
+}
+
 const LandingPage = () => {
     useEffect(() => {
         floatySpace();
@@ -14,8 +36,7 @@ const LandingPage = () => {
     }, []);
 
     const floatySpace = () => {
-        let space;
-        var colors = [
+        const colors = [
             '#d33682',
             '#268bd2',
             '#2aa198',
@@ -26,21 +47,21 @@ const LandingPage = () => {
             '#859900',
         ];
 
-        space = new CanvasSpace('canvas').setup({ bgcolor: '#002b36' });
-        var form = new Form(space);
+        const space = new CanvasSpace('canvas').setup({ bgcolor: '#002b36' });
+        const form = new Form(space);
 
         // Elements
-        var pts: Float32Array[] = [];
-        var center = space.size.$divide(1.8);
-        var angle = -(window.innerWidth * 0.5);
-        var count = window.innerWidth * 0.05;
+        const pts: Pt[] = [];
+        const center = space.size.$divide(1.8);
+        const angle = -(window.innerWidth * 0.5);
+        let count = window.innerWidth * 0.05;
         if (count > 150) count = 150;
-        var line = new Line(0, angle).to(space.size.x, 0);
-        var mouse = center.clone();
+        const line = new Line(0, angle).to(space.size.x, 0);
+        const mouse = center.clone();
 
-        var r = Math.min(space.size.x, space.size.y) * 1;
-        for (var i = 0; i < count; i++) {
-            var p: any = new Vector(
+        const r = Math.min(space.size.x, space.size.y) * 1;
+        for (let i = 0; i < count; i++) {
+            const p: Vector = new Vector(
                 Math.random() * r - Math.random() * r,
                 Math.random() * r - Math.random() * r
             );
@@ -52,9 +73,9 @@ const LandingPage = () => {
         // Canvas
         space.add({
             animate: () => {
-                for (var i = 0; i < pts.length; i++) {
+                for (let i = 0; i < pts.length; i++) {
                     // rotate the points slowly
-                    var pt: any = pts[i];
+                    const pt: Pt = pts[i];
 
                     pt.rotate2D(Const.one_degree / 20, center);
                     form.stroke(false)
@@ -62,12 +83,12 @@ const LandingPage = () => {
                         .point(pt, 1);
 
                     // get line from pt to the mouse line
-                    var ln = new Line(pt).to(
+                    const ln = new Line(pt).to(
                         line.getPerpendicularFromPoint(pt)
                     );
 
                     // opacity of line derived from distance to the line
-                    var distFromMouse = Math.abs(
+                    const distFromMouse = Math.abs(
                         ln.getDistanceFromPoint(mouse)
                     );
 
@@ -77,7 +98,7 @@ const LandingPage = () => {
                         if (pt.brightness > 0.1) pt.brightness -= 0.01;
                     }
 
-                    var color = 'rgba(255,255,255,' + pt.brightness + ')';
+                    const color = 'rgba(255,255,255,' + pt.brightness + ')';
                     form.stroke(color).fill(true).line(ln);
                 }
             },
