@@ -14,31 +14,28 @@ export default [
         endDate: 'Sep 2017',
         description: (
             <p>
-                My first role was at AST and was part of an appreticeship. I was
-                hired at AST primarily as a software tester but while working at
-                AST I undertook 2 roles, As mentioned the main role was testing
-                the software but the secondary role was as a network engineer. I
-                was responsible for maintaining all of the in house servers that
-                were used for the software such as dev and test servers.
+                My first role was with AST Group as part of an apprenticeship
+                program. Initially hired as a software tester, I took on dual
+                responsibilities, including a secondary role as a network
+                engineer. I was responsible for maintaining the in-house servers
+                used for development and testing.
                 <br />
                 <br />
-                While working at AST I worked very closely with the developers
-                who helped me get started with software development. An extra
-                task I took on was creating unit tests in C# to help speed up
-                the process. Alongside the unit tests I was also developing
-                automated UI tests using the Selenium framework and Python which
-                offered a unique and helpful system for end-to-end testing that
-                didn't require too many man hours each time a release was ready.
+                At AST, I worked closely with developers who guided me into
+                software development. One of my additional tasks was creating
+                unit tests in C# to expedite the development process. I also
+                developed automated UI tests using the Selenium framework and
+                Python, which provided an efficient system for end-to-end
+                testing, significantly reducing manual effort with each release.
                 <br />
                 <br />
-                IRIS is a solution AST offer that I spent most of my time
-                working with, IRIS is an asset tracking software that allows to
-                accurately track and communicate with satellite tracking device.
-                The requirement to test if different devices worked with the
-                system meant that I gained a strong understanding of how these
-                devices worked. The knowledge gained on these devices and how
-                they communicate has given me unique knowledge on how different
-                network types function and how data is transfered using them.
+                During my time at AST, I primarily worked on IRIS, an asset
+                tracking solution that enables accurate tracking and
+                communication with satellite devices. Testing the compatibility
+                of various devices with IRIS allowed me to gain a comprehensive
+                understanding of how these devices operate. This experience also
+                gave me valuable insights into different network types and data
+                transfer methods.
             </p>
         ),
         logo: ast,
@@ -50,27 +47,25 @@ export default [
         endDate: 'May 2019',
         description: (
             <p>
-                I joined SupplyPoint as a junior full-stack developer and mainly
-                helped with bug fixes in a couple different REST API's when I
-                first started. This was a valuable learning point for me as it
-                gave me the foundation knowledge on how to effectively work in a
-                software team. It also helped me gain the skills needed to work
-                on code that I havent written.
+                I joined SupplyPoint as a junior full-stack developer, initially
+                focusing on bug fixes for various REST APIs. This role was a
+                significant learning experience, providing me with foundational
+                knowledge in effective teamwork within a software development
+                environment and the skills to work with existing codebases.
                 <br />
                 <br />
-                After working with SupplyPoint for a few months I was given the
-                task of redesigning the UI that is used on the machines they
-                produced. This offered a great oppurtunity to use the React
-                knowledge I had been gaining in my personal time. I suggested
-                React to the team and everyone seemed keen to use it so the new
-                UI used React as it's foundation and was built into a windows
+                A few months into my tenure, I was tasked with redesigning the
+                UI for the machines produced by SupplyPoint. This project was a
+                great opportunity to apply the React skills I had been
+                developing in my personal time. I proposed using React for the
+                new UI, and the team embraced the idea. Consequently, the new
+                interface was built on React and integrated into a Windows
                 desktop application using Electron.
                 <br />
                 <br />
-                With SupplyPoint being my first role as a developer I feel like
-                it was a very important step in helping me move my career
-                forward. This is also where I started to use a lot of the
-                technologies that I now specialise in.
+                SupplyPoint was my first developer role, marking an essential
+                milestone in my career progression. It was here that I began
+                working extensively with technologies that I now specialize in.
             </p>
         ),
         logo: supplypoint,
@@ -82,29 +77,30 @@ export default [
         endDate: 'Jul 2020',
         description: (
             <p>
-                I joined toob as an Application Systems Specialist which to
-                start with meant I was responsible for a variety of things. Toob
-                was a start up and I joined quite early in the hiring process.
-                My main responsibilities was creating and maintaining extensions
-                to a 3rd party software used to manage the network and
-                customers. These extensions were built in C# and Javascript.
+                I joined Toob as an Application Systems Specialist, taking on a
+                variety of responsibilities in a fast-growing startup
+                environment. My primary role involved creating and maintaining
+                extensions for a third-party software used to manage both the
+                network and customer interactions. These extensions were
+                developed using C# and JavaScript.
                 <br />
                 <br />
-                Along side my main priorities I also helped intigrate the ACS
-                used to remotely manage customer CPE which allowed the support
-                staff to offer a better service to the customer. Along with the
-                ACS I also built an extension for the management software that
-                allowed the ACS to be used directly from the management software
-                meaning the support staff could offer full support from a single
-                page rather than having to move between different sites.
+                In addition to my main tasks, I integrated an ACS (Auto
+                Configuration Server) to remotely manage customer CPE (Customer
+                Premises Equipment), enhancing the support staff's ability to
+                deliver superior customer service. I also developed an extension
+                for the management software, allowing the ACS to be accessed
+                directly from the same platform. This integration enabled
+                support staff to provide comprehensive support from a single
+                interface, improving efficiency and user experience.
                 <br />
                 <br />
-                At toob I played a big role in the design process working
-                closely with management and the support staff to ensure the
-                software effectively fit the purpose and it's different use
-                cases. This was the first role where I played a big part in the
-                design process so I gained a lot of useful knowledge about how
-                to consider the client.
+                At Toob, I played a significant role in the design process,
+                collaborating closely with management and support staff to
+                ensure the software met its intended purposes and various use
+                cases. This position marked my first major involvement in
+                design, providing valuable insights into client-focused software
+                development.
             </p>
         ),
         logo: toob,
@@ -116,33 +112,29 @@ export default [
         endDate: 'Aug 2021',
         description: (
             <p>
-                My role at North Sails was as a Full Stack developer helping
-                build and maintain an internal sales and stock management
-                system. This system was built with a C# and .NET Core REST API
-                and a ReactJS Front End using MaterialUI. When I joined the
-                company the REST API was built in VB so a lot of my time was
-                spent converting this to the more modern .NET Core version. I
-                was also given the task of converting a lot of old pages from a
-                large mix of technologies to use React and create a few new
-                pages to expand functionality.
+                At North Sails, I worked as a Full Stack Developer, contributing
+                to the development and maintenance of an internal sales and
+                stock management system. This system was built using a C# and
+                .NET Core REST API and a ReactJS frontend with MaterialUI. Upon
+                joining, I focused on converting the existing REST API from VB
+                to the more modern .NET Core framework. Additionally, I upgraded
+                numerous outdated pages, transitioning them to React and
+                developing new pages to enhance functionality.
                 <br />
                 <br />
-                With the North Sails development team being made up of myself
-                and 1 other person there was lots of oppurtunity for me to play
-                a part in the design of the software as well as the actual
-                development of it so while at North Sails I helped plan and
-                prototype interesting projects such as a mobile app for scanning
-                QR codes to help stock management in the production process of
-                the sails.
+                Given the small development team, consisting of just myself and
+                one other person, I had ample opportunities to contribute to
+                both the design and development of the software. One of the
+                interesting projects I planned and prototyped was a mobile app
+                for scanning QR codes to aid in stock management during the sail
+                production process.
                 <br />
                 <br />
-                At North Sails I picked up some valuable skills such as the
-                ability to refactor other peoples code in a logical and thought
-                out way to ensure all bases are covered. North Sails was also my
-                first role where I could apply my Typescript knowledge so I was
-                able to take what I knew and use it in a professional
-                environment. While at North Sails I also became more proficient
-                at displaying large amounts of data in a user friendly way.
+                During my time at North Sails, I honed valuable skills such as
+                refactoring code logically and comprehensively. This role also
+                allowed me to apply my TypeScript knowledge in a professional
+                setting for the first time. Moreover, I became proficient at
+                presenting large amounts of data in a user-friendly manner.
             </p>
         ),
         logo: northsails,
@@ -152,7 +144,31 @@ export default [
         position: 'Software Engineer',
         startDate: 'Aug 2021',
         endDate: 'Oct 2021',
-        description: <></>,
+        description: (
+            <p>
+                I joined Dootrix as a Full-Stack Developer, assisting multiple
+                teams in building and maintaining various client projects.
+                Throughout my tenure, I utilized a range of technologies
+                including C#, .NET Core, and JavaScript to develop systems such
+                as REST APIs and user-friendly interfaces. One notable project
+                involved implementing a cache system for a car valuation tool,
+                enabling users to return to previously checked vehicle data.
+                <br />
+                <br />
+                Dootrix was my first experience working in a dedicated software
+                house, offering a unique dynamic where my work was driven by
+                diverse client needs rather than a single company's objectives.
+                I also participated in a small internal project, where each
+                employee chose a new technology to explore. I selected Xamarin
+                and developed a collection management system for Pokémon cards,
+                which proved to be a fun and challenging endeavor.
+                <br />
+                <br />
+                While Dootrix wasn't the perfect fit for me, it provided
+                valuable experience in a fast-paced environment, working on a
+                wide array of projects and technologies.
+            </p>
+        ),
         logo: dootrix,
     },
     {
@@ -160,7 +176,29 @@ export default [
         position: 'Software Developer',
         startDate: 'Nov 2021',
         endDate: 'Mar 2022',
-        description: <></>,
+        description: (
+            <p>
+                At MI-Voice, I worked as a Full-Stack Developer, primarily
+                focused on building a CMS for generating custom static web pages
+                and a voting system used for small-scale local voting, primarily
+                within political parties. This system was developed using a
+                .NET-based REST API and Next.js. My role involved end-to-end
+                development of features, starting from the database and
+                extending up to the user interface.
+                <br />
+                <br />
+                Working in a very small team, consisting of just myself and a
+                senior developer, I had significant control over how features
+                were implemented. The small company size provided a unique
+                opportunity to work closely with the intended clients, who were
+                often present in the office.
+                <br />
+                <br />
+                During my time at MI-Voice, I discovered that my true passion
+                lies in front-end development, which led me to pursue this area
+                as my specialty.
+            </p>
+        ),
         logo: mivoice,
     },
     {
@@ -168,7 +206,34 @@ export default [
         position: 'Frontend Developer',
         startDate: 'May 2022',
         endDate: 'Present',
-        description: <></>,
+        description: (
+            <p>
+                I initially joined AutoProtect as a Junior Front-End Developer
+                and advanced to a mid-level Front-End Developer during my
+                tenure. My primary task was to build a modern, user-friendly
+                interface for the Navigate platform, which facilitates the
+                purchase of warranty and insurance products for new and used
+                vehicles. The platform's UI leverages React, Redux, and
+                Material-UI, along with various libraries to achieve
+                comprehensive functionality.
+                <br />
+                <br />
+                At AutoProtect, I was deeply involved in numerous projects,
+                ranging from refactoring large amounts of outdated code to
+                optimizing the platform for mobile use, particularly on tablets.
+                I played a significant role from the design stage through to
+                deployment in production.
+                <br />
+                <br />
+                AutoProtect provided me with extensive new knowledge, including
+                advanced React techniques, general web development skills,
+                understanding GitLab pipelines, and participating in production
+                deployments. Working within larger teams offered valuable
+                opportunities to gain diverse insights on each task and
+                understand not just how data moves, but also the reasons behind
+                its flow.
+            </p>
+        ),
         logo: autoprotect,
     },
 ];

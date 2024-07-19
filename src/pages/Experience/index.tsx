@@ -49,17 +49,17 @@ const Experience = () => {
             <div className={styles.experienceBlock}>
                 <h1 className={styles.experienceTitle}>Experience</h1>
                 <p className={styles.experienceText}>
-                    Through my 8 years experience in the field I have worked for
-                    a variety of different companies each offering unique
-                    services across many different sectors. Each role has
-                    offered a multitude of different problems to solve which I
-                    belive has helped me develop my skills to tackle any problem
-                    thrown at me.
+                    With 8 years of experience in the tech industry, I have had
+                    the opportunity to work for various companies across
+                    multiple sectors, each providing unique services. Every role
+                    presented its own set of challenges, which have been
+                    instrumental in honing my problem-solving skills and
+                    enhancing my abilities as a developer.
                     <br />
                     <br />
-                    Feel free to click through the different roles to see what I
-                    did in each role and how it's benefited me and my abilities
-                    as a developer.
+                    Explore the different roles I've held to see the projects
+                    I've worked on and how each position has contributed to my
+                    growth and expertise as a developer.
                 </p>
             </div>
             <Modal

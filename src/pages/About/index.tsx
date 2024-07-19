@@ -14,17 +14,19 @@ const About = () => {
             <div className={styles.aboutBlock}>
                 <h1 className={styles.aboutTitle}>Who am I?</h1>
                 <p className={styles.aboutText}>
-                    My name is Logan and I'm a React based front-end developer
-                    based in Hampshire. I have been working in the industry for
-                    8 years now starting out as a tester and quickly moving into
-                    development. I was a Full-Stack developer for 5 years before
-                    finding my passion in front-end development.
+                    Hello! I'm Logan, a front-end developer specializing in
+                    React, currently based in Hampshire. With 8 years of
+                    experience in the tech industry, I started my career as a
+                    tester before quickly transitioning into development. After
+                    spending 5 years as a Full-Stack developer, I discovered my
+                    true passion lies in front-end development.
                     <br />
                     <br />
-                    Beyond the world of development I am a maker with a passion
-                    for 3D printing, keyboards and Lego. When i'm not typing
-                    code you'll find me designing new Lego MOC's or figuring out
-                    what bizarre way I can build a new keyboard.
+                    When I'm not immersed in coding, I'm a dedicated maker with
+                    a love for 3D printing, custom keyboards, and Lego
+                    creations. You'll often find me designing new Lego MOCs (My
+                    Own Creations) or brainstorming innovative ways to build the
+                    next unique keyboard.
                 </p>
                 <div className={styles.aboutLinks}>
                     <a href="mailto:logan@neutral.systems">
