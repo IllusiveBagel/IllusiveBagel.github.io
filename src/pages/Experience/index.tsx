@@ -1,7 +1,11 @@
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+
 import Modal from '../../components/Modal';
 import experiences from '../../data/experiences';
 import { Experience as ExperienceType } from '../../types';
+import cv from '../../assets/cv.pdf';
 
 import styles from './Experience.module.scss';
 
@@ -61,6 +65,18 @@ const Experience = () => {
                     I've worked on and how each position has contributed to my
                     growth and expertise as a developer.
                 </p>
+                <a
+                    href={cv}
+                    download="LoganYoungCV"
+                    target="_blank"
+                    className={styles.experienceLink}
+                >
+                    <FontAwesomeIcon
+                        className={styles.experienceLinkIcon}
+                        icon={faDownload}
+                    />
+                    Download Full CV
+                </a>
             </div>
             <Modal
                 open={showModal}

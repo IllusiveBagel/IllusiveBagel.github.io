@@ -132,3 +132,15 @@
         padding-top: 0;
     }
 }
+
+.experienceLink {
+    display: block;
+    width: 85%;
+    text-align: center;
+    text-decoration: underline 2px #{$base1};
+
+    .experienceLinkIcon {
+        margin-right: 10px;
+        color: #{$base1};
+    }
+}
