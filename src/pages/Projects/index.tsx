@@ -8,6 +8,7 @@ import styles from './Projects.module.scss';
 const Projects = () => {
     return (
         <div className={styles.projectsContainer}>
+            <h1 className={styles.projectsTitle}>Personal Projects</h1>
             {projects.map((project, idx) => {
                 return (
                     <a

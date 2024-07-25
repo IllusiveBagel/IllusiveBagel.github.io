@@ -57,3 +57,17 @@
     color: #{$magenta};
     margin-right: 10px;
 }
+
+.projectsTitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    text-decoration: underline 2px #{$magenta};
+    color: #{$base1};
+
+    @media (max-width: 640px) {
+        font-size: 1.8em;
+        text-align: center;
+    }
+}
