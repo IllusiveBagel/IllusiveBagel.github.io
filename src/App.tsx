@@ -6,7 +6,6 @@ import LandingPage from './pages/Landing';
 import Title from './pages/Landing/Title';
 import About from './pages/About';
 import Experience from './pages/Experience';
-import Projects from './pages/Projects';
 
 import styles from './App.module.scss';
 
@@ -52,13 +51,6 @@ function App() {
                 style={{ top: '200%' }}
             >
                 <Experience />
-            </section>
-            <section
-                id="Projects"
-                className={classNames(styles.section, styles.flex)}
-                style={{ top: '300%' }}
-            >
-                <Projects />
             </section>
         </>
     );

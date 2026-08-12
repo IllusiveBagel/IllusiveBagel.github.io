@@ -6,7 +6,7 @@
 
 .modalHeader {
     padding: 10px 16px;
-    background-color: #{$base02};
+    background-color: rgba($base02, 0.6);
     color: #{$base1};
     border-bottom: 2px solid #{$magenta};
 
@@ -58,7 +58,7 @@
 // Make Animations
 .modalContent {
     position: fixed;
-    background-color: #{$base03};
+    background-color: rgba($base02, 0.6);
     width: 60%;
     height: auto;
     top: 50%;
@@ -95,7 +95,7 @@
 
 .modalBody {
     padding: 3% 10%;
-    background-color: #{$base03};
+    background-color: transparent;
 }
 
 .modal {

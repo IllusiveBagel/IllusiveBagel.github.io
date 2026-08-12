@@ -8,14 +8,14 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: #{$base02};
+    background: transparent;
     color: rgb(13, 26, 38);
     height: 60px;
     line-height: 60px;
     width: 100vw;
     max-width: 100%;
     z-index: 10;
-    border-bottom: 2px solid #{$magenta};
+    border-bottom: 2px solid #{$base0};
 
     ul {
         display: inline-block;
